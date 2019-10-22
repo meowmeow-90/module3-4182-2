@@ -1,5 +1,38 @@
 import "./scss/styles.scss";
 (function main() {
+    console.log("START");
+    if (true) {
+        var lang = "vi";
+        var target = "en-us";
+        console.log("inside block");
+        console.log(target);
+    }
+    console.log(lang);
+    console.log(target);
+})();
+
+(function main() {
+    var x = 5;
+    console.log(x);
+    var x = 10;
+    console.log(x);
+
+    let y = 55;
+    console.log(y);
+
+})();
+
+(function main() {
+
+    console.log(x);
+    var x = 5;
+
+    var y = 10;
+    console.log(y);
+
+})();
+
+(function main() {
     let message: string;
     let total: number = 100;
     let isProduction = true;
@@ -23,6 +56,7 @@ import "./scss/styles.scss";
         id: string;
         title: string;
         body?: string;
+
     }
 
     isProduction = false;
@@ -30,9 +64,10 @@ import "./scss/styles.scss";
     unknown = 'changed';
 
     const post: IPost = {
-
+        id:undefined,
+        title :undefined
     };
-    message = 50;
+    message = 'fifty';
 
     function getPost(postId: string): IPost {
         // do something to retrieve post
@@ -43,4 +78,6 @@ import "./scss/styles.scss";
             extra: 'data'
         } as IPost;
     }
+
+
 })();
